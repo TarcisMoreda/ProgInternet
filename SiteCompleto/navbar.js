@@ -3,13 +3,7 @@ let navbar = document.getElementById('navbar');
 const is_subfolder = document.URL.replace('http://127.0.0.1:5500/', '').includes('/');
 let links = [
 	'index.html',
-	'jogos/demonssouls.html',
-	'jogos/darksouls.html',
-	'jogos/darksouls2.html',
-	'jogos/darksouls3.html',
-	'jogos/bloodborne.html',
-	'jogos/sekiro.html',
-	'jogos/eldenring.html',
+	'sobremim.html',
 	'itens.html',
 	'gameplay/darksouls.html',
 	'gameplay/bloodborne.html',
@@ -38,55 +32,42 @@ if(is_subfolder){
 }
 
 const inner_nav = `
-	<div id="logo">Souls</div>
+	<div id="logo">Fromsoftware Wiki</div>
 	<label for="btn" class="icon">
 		<i class="fa fa-bars"></i>
 	</label>
 	<input type="checkbox" id="btn"></input>
 	<ul>
 		<li><a href="${links[0]}">Início</a></li>
-		<li>
-			<label for="btn-jogos" class="show">Jogos +</label>
-			<a>Jogos</a>
-			<input type="checkbox" id="btn-jogos">
-			<ul>
-				<li><a href="${links[1]}">Demon's Souls</a></li>
-				<li><a href="${links[2]}">Dark Souls</a></li>
-				<li><a href="${links[3]}">Dark Souls 2</a></li>
-				<li><a href="${links[4]}">Dark Souls 3</a></li>
-				<li><a href="${links[5]}">Bloodborne</a></li>
-				<li><a href="${links[6]}">Sekiro</a></li>
-				<li><a href="${links[7]}">Elden Ring</a></li>
-			</ul>
-		</li>
-		<li><a href="${links[8]}">Itens Destaque</a></li>
+		<li><a href="${links[1]}">Sobre Mim</a></li>
+		<li><a href="${links[2]}">Itens Destaque</a></li>
 		<li>
 			<label for="btn-gp" class="show">Gameplay +</label>
 			<a>Gameplay</a>
 			<input type="checkbox" id="btn-gp">
 			<ul>
-				<li><a href="${links[9]}">Demon's/Dark Souls</a></li>
-				<li><a href="${links[10]}">Bloodborne</a></li>
-				<li><a href="${links[11]}">Sekiro</a></li>
-				<li><a href="${links[12]}">Elden Ring</a></li>
+				<li><a href="${links[3]}">Demon's/Dark Souls</a></li>
+				<li><a href="${links[4]}">Bloodborne</a></li>
+				<li><a href="${links[5]}">Sekiro</a></li>
+				<li><a href="${links[6]}">Elden Ring</a></li>
 			</ul>
 		</li>
-		<li><a href="${links[13]}">História</a></li>
+		<li><a href="${links[7]}">História</a></li>
 		<li>
 			<label for="btn-galeria" class="show">Galeria +</label>
 			<a>Galeria</a>
 			<input type="checkbox" id="btn-galeria">
 			<ul>
-				<li><a href="${links[14]}">Demon's Souls</a></li>
-				<li><a href="${links[15]}">Dark Souls</a></li>
-				<li><a href="${links[16]}">Dark Souls 2</a></li>
-				<li><a href="${links[17]}">Dark Souls 3</a></li>
-				<li><a href="${links[18]}">Bloodborne</a></li>
-				<li><a href="${links[19]}">Sekiro</a></li>
-				<li><a href="${links[20]}">Elden Ring</a></li>
+				<li><a href="${links[8]}">Demon's Souls</a></li>
+				<li><a href="${links[9]}">Dark Souls</a></li>
+				<li><a href="${links[10]}">Dark Souls 2</a></li>
+				<li><a href="${links[11]}">Dark Souls 3</a></li>
+				<li><a href="${links[12]}">Bloodborne</a></li>
+				<li><a href="${links[13]}">Sekiro</a></li>
+				<li><a href="${links[14]}">Elden Ring</a></li>
 			</ul>
 		</li>
-		<li><a href="${links[21]}">Contato</a></li>
+		<li><a href="${links[15]}">Contato</a></li>
 	</ul>
 `;
 navbar.innerHTML = inner_nav;
