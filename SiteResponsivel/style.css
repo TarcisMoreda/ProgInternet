@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #4A4A4C;
+
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+    text-transform: capitalize;
+}
+
+.big-text{
+	font-size: 200%;
+	font-weight: bold;
+}
+.small-text{
+	font-size: 75%;
+}
+.center{
+	text-align: center;
+}
+
+section{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.in-section{
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+header,
+.bg-grey{
+	width: 100%;
+	background-color: #9D9D9F;
+}
+
+nav{
+	display: flex;
+	height: 75px;
+}
+
+nav #logo{
+	font-weight: bold;
+	align-self: center;
+	justify-self: flex-start;
+	padding-left: 5rem;
+	flex-basis: 200px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+nav #tabs{
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+nav #tabs .tab{
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+nav #icons{
+	display: flex;
+	align-self: center;
+	justify-self: flex-end;
+	font-weight: bold;
+	padding-right: 5rem;
+	flex-basis: 200px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+nav #icons .icon{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+#news{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#news img{
+	margin-left: 2rem;
+	max-width: 35%;
+}
+
+#news .small-text{
+	margin-top: 1.5rem;
+	padding-right: 50%;
+}
+
+#news #news-btn{
+	border: none;
+	margin-top: 1.5rem;
+	padding: 1rem 2rem;
+	background-color: #4A4A4C;
+	color: #FFFFFF;
+}
+
+#welcome{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#welcome #message .small-text{
+	margin-top: 1.5rem;
+}
+
+#welcome #cards{
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, 15rem);
+	grid-auto-flow: dense;
+	margin-top: 1.5rem;
+}
+
+#welcome #cards .card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#welcome #cards .card p{
+	margin-top: 1rem;
+	font-size: 75%;
+	max-width: 75%;
+}
+
+#welcome #cards img{
+	max-width: 100px;
+}
+
+.arrow{
+	width: 5rem;
+	height: 100%;
+	margin-bottom: 5rem;
+	font-size: 5rem;
+}
+
+#activities{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#activities #activities-btn{
+	border: none;
+	margin-top: 1.5rem;
+	align-self: center;
+	width: 5rem;
+	height: 2rem;
+	background-color: #4A4A4C;
+	color: #FFFFFF;
+}
+
+#activities #message{
+	margin-left: 5rem;
+}
+
+#activities #message .big-text,
+#activities #message .small-text{
+	text-align: start;
+	width: 100%;
+}
+
+#activities #message .small-text{
+	margin-top: 1.5rem;
+}
+
+#activities #cards{
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	gap: 1rem;
+	grid-template-columns: repeat(4, 15rem);
+	grid-auto-flow: dense;
+	margin-top: 1.5rem;
+}
+
+#activities .card-wrapper{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#activities #cards .card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#activities #cards .card p{
+	margin-top: 1rem;
+	font-size: 75%;
+	max-width: 75%;
+}
+
+#activities #cards img{
+	max-width: 200px;
+}
+
+#community{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#community img{
+	margin-right: 2rem;
+	max-width: 35%;
+}
+
+#community .small-text{
+	margin-top: 1.5rem;
+	padding-right: 50%;
+}
+
+#community #community-btn{
+	border: none;
+	margin-top: 1.5rem;
+	padding: 1rem 2rem;
+	background-color: #4A4A4C;
+	color: #FFFFFF;
+}
+
+@media only screen and (max-width: 900px){
+	#news{
+		flex-direction: column;
+	}
+	#news .new{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#news .new .center-res{
+		text-align: center;
+	}
+	#news .small-text{
+		padding: 0;
+	}
+	#news img{
+		margin-left: 0;
+		margin-top: 1.5rem;
+		max-width: 50%;
+	}
+
+	#community{
+		flex-direction: column-reverse;
+	}
+	#community .info{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#community .community .center-res{
+		text-align: center;
+	}
+	#community .small-text{
+		padding: 0;
+	}
+	#community img{
+		margin-right: 0;
+		margin-top: 1.5rem;
+		max-width: 50%;
+	}
+}
