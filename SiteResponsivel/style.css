@@ -43,11 +43,21 @@ header,
 	background-color: #9D9D9F;
 }
 
+footer{
+	width: 100%;
+	background-color: #9d9d9f79;
+}
+
 nav{
 	display: flex;
 	height: 75px;
 }
-
+nav .burger-wrapper{
+	display: none;
+	flex-basis: 200px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
 nav #logo{
 	font-weight: bold;
 	align-self: center;
@@ -57,7 +67,6 @@ nav #logo{
 	flex-grow: 0;
 	flex-shrink: 0;
 }
-
 nav #tabs{
 	display: flex;
 	align-self: center;
@@ -69,7 +78,6 @@ nav #tabs .tab{
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
-
 nav #icons{
 	display: flex;
 	align-self: center;
@@ -90,17 +98,14 @@ nav #icons .icon{
 	align-items: center;
 	justify-content: center;
 }
-
 #news img{
 	margin-left: 2rem;
 	max-width: 35%;
 }
-
 #news .small-text{
 	margin-top: 1.5rem;
 	padding-right: 50%;
 }
-
 #news #news-btn{
 	border: none;
 	margin-top: 1.5rem;
@@ -115,11 +120,9 @@ nav #icons .icon{
 	align-items: center;
 	justify-content: center;
 }
-
 #welcome #message .small-text{
 	margin-top: 1.5rem;
 }
-
 #welcome #cards{
 	display: grid;
 	justify-content: center;
@@ -129,20 +132,17 @@ nav #icons .icon{
 	grid-auto-flow: dense;
 	margin-top: 1.5rem;
 }
-
 #welcome #cards .card{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-
 #welcome #cards .card p{
 	margin-top: 1rem;
 	font-size: 75%;
 	max-width: 75%;
 }
-
 #welcome #cards img{
 	max-width: 100px;
 }
@@ -159,7 +159,6 @@ nav #icons .icon{
 	flex-direction: column;
 	justify-content: center;
 }
-
 #activities #activities-btn{
 	border: none;
 	margin-top: 1.5rem;
@@ -169,21 +168,17 @@ nav #icons .icon{
 	background-color: #4A4A4C;
 	color: #FFFFFF;
 }
-
 #activities #message{
 	margin-left: 5rem;
 }
-
 #activities #message .big-text,
 #activities #message .small-text{
 	text-align: start;
 	width: 100%;
 }
-
 #activities #message .small-text{
 	margin-top: 1.5rem;
 }
-
 #activities #cards{
 	display: grid;
 	justify-content: center;
@@ -193,26 +188,22 @@ nav #icons .icon{
 	grid-auto-flow: dense;
 	margin-top: 1.5rem;
 }
-
 #activities .card-wrapper{
 	width: 100%;
 	display: flex;
 	align-items: center;
 }
-
 #activities #cards .card{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-
 #activities #cards .card p{
 	margin-top: 1rem;
 	font-size: 75%;
 	max-width: 75%;
 }
-
 #activities #cards img{
 	max-width: 200px;
 }
@@ -220,28 +211,164 @@ nav #icons .icon{
 #community{
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
-
 #community img{
 	margin-right: 2rem;
 	max-width: 35%;
 }
-
 #community .small-text{
 	margin-top: 1.5rem;
-	padding-right: 50%;
+	padding-left: 30%;
 }
-
+#community .big-text{
+	padding-left: 30%;
+}
 #community #community-btn{
 	border: none;
 	margin-top: 1.5rem;
 	padding: 1rem 2rem;
 	background-color: #4A4A4C;
 	color: #FFFFFF;
+	margin-left: 30%;
 }
 
+#popular{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#popular #activities-btn{
+	border: none;
+	margin-top: 1.5rem;
+	align-self: center;
+	width: 5rem;
+	height: 2rem;
+	background-color: #4A4A4C;
+	color: #FFFFFF;
+}
+#popular #message{
+	margin-left: 5rem;
+}
+#popular #message .big-text,
+#popular #message .small-text{
+	text-align: start;
+	width: 100%;
+}
+#popular #message .small-text{
+	margin-top: 1.5rem;
+}
+
+#popular #cards{
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, 15rem);
+	grid-auto-flow: dense;
+	margin-top: 1.5rem;
+}
+#popular .card-wrapper{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+#popular #cards .card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#popular #cards .card p{
+	margin-top: 1rem;
+	font-size: 75%;
+	max-width: 75%;
+}
+#popular #cards img{
+	max-width: 200px;
+}
+#popular #popular-btn{
+	border: none;
+	margin-top: 1.5rem;
+	padding: 1rem 1rem;
+	width: 10rem;
+	align-self: center;
+	background-color: #4A4A4C;
+	color: #FFFFFF;
+}
+
+#newsletter{
+	display: flex;
+}
+#newsletter .info .big-text,
+#newsletter .info .small-text{
+	text-align: start;
+	margin-bottom: 1.5rem;
+	width: 100%;
+}
+#newsletter #newsletter-btn{
+	margin-left: 5rem;
+	width: 20rem;
+	height: 2rem;
+	align-self: center;
+}
+
+#bottom{
+	display: flex;
+	align-items: center;
+}
+#bottom #logo{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+#bottom #links{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, 15rem);
+	grid-auto-flow: dense;
+}
+#bottom #links .link{
+	display: flex;
+	flex-direction: column;
+}
+#bottom #links .link .info{
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+#bottom #something .info{
+	text-align: center;
+	margin-bottom: 1rem;
+}
+#bottom #something .icons{
+	display: flex;
+	justify-content: space-around;
+}
+
+
 @media only screen and (max-width: 900px){
+	nav .burger-wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		justify-self: center;
+		padding-left: 5rem;
+	}
+	nav #logo{
+		font-weight: bold;
+		text-align: center;
+		align-self: center;
+		justify-self: center;
+		padding-left: 0;
+		flex-grow: 1;
+		flex-shrink: 0;
+	}
+	nav #tabs{
+		display: none;
+	}
+
 	#news{
 		flex-direction: column;
 	}
@@ -276,9 +403,40 @@ nav #icons .icon{
 	#community .small-text{
 		padding: 0;
 	}
+	#community .big-text{
+		padding: 0;
+	}
+	#community #community-btn{
+		margin: 0;
+		margin-top: 1.5rem;
+	}
 	#community img{
 		margin-right: 0;
 		margin-top: 1.5rem;
 		max-width: 50%;
 	}
+
+	#newsletter{
+		display: flex;
+		flex-direction: column;
+	}
+	#newsletter #newsletter-btn{
+		margin-left: 0;
+		align-self: center;
+	}
+	#newsletter .info .big-text,
+	#newsletter .info .small-text{
+		text-align: center;
+	}
+
+	#bottom{
+		flex-direction: column;
+	}
+	#bottom #logo{
+		margin-bottom: 1.5rem;
+	}
+	#bottom #links{
+		margin-bottom: 1.5rem;
+	}
+
 }
